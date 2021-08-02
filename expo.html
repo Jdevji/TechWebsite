@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Technology Co-operation</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+<script>// basic javascript code for the image carousell 
+    
+    var i=0;//set var to 0
+    
+    var images= [];//declare images array
+        
+    var time= 2500;//declare and initialise time variable to 2500ms
+        
+    images[0] = 'img/slideshow1.png'; //add images to the array
+    images[1] = 'img/slideshow2.png';
+    images[2] = 'img/slideshow3.png';
+    images[3] = 'img/slideshow4.png';
+    images[4] = 'img/slideshow5.png';
+    
+    function change_img(){//function to run
+        document.slideshow.src = images[i];//sets the source of the image tag in this document to an item in the array
+        
+        if(i < images.length - 1){   //checks the value of i to see if it is greater than the arrays length - 1 
+            i++;      //if true i is incremented by 1
+        }
+        
+        else{
+            i = 0;//otherwise i is set to 0
+        }
+        
+        setTimeout("change_img()", time);//the function change_img() is called every 2500ms(2.5 seconds)
+    }
+    
+    window.onload = change_img;//once the webpage is loaded for the first time the function change_img() is called to initiate the carrousel.
+</script>
+    
+<!--header-->
+<header>
+    <div class="container">
+        <div id="logo-brand">
+         
+        <a id="logo-link" href="index.html"><img src="img/logo.png" alt="main company logo"></a>
+        </div>
+    <!--nav bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">Tech on the News</a></li>
+                <li><a href="deals.html">Top Deals</a></li>
+                <li><a href="expo.html">Expo</a></li>
+                <li><a href="contact-info.html">Contact Us</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+        </nav>
+    
+   </div> 
+    
+</header>
+<!--description of the expo-->
+<section id="expo_description">
+    
+    <div class="container">
+    
+    <h1>Our Expo</h1>
+    <p>We host a annual expo at the Excel expedition centre in London. The Expo is held on the 15th of June every Year. Just come along by yourself or with friends. Here we have different b  gadgets of the future on display for lots of competitive technological device vendors such as Samsung, Apple, Siemens , GE healthcare, Sony and many more. If you have sihned up to our newsletter on the home page, we will give yo a friendly reminder that the expo is near so you can clear your schedule and pay a visit. Though the expo is free on the day we will give everyone a chance to donate to the cause of the expo on the day of their visit. If you do not wish to donate, that is completely fine.
+   </p>
+        
+    </div>
+    
+</section>
+  <!--title for the image carousell-->  
+<section id="what_to_expect_title">
+    <div class="container">
+    
+    <h2>Below is a insight as to what to expect from  our Lovely Expo's</h2>
+    
+    </div>
+    
+</section>
+    
+    
+<!--image carousell-->
+    
+<div class="container">
+    
+   <div id="what_to_expect">
+    <img name="slideshow" src="#" id="slideshow" alt="images that are appart of the image carrousel go here">  
+    </div>
+</div>
+    
+      
+    
+
+ <!--footer-->   
+    
+<footer>
+    
+    <p> Technology Haven Copyright &copy; 2019</p>
+    
+</footer>   
+    
+    
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+

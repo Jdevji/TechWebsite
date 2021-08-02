@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Technology Co-operation</title>
+	<link href="style.css" rel="stylesheet">
+    
+    <script>//javascript code for DOM manipulation for colour of subscribe button
+    
+    function changeColor(){ //declared function
+        document.getElementById("subscribe_btn").style.background = "blue";//sets background colour of subscribe button to blue
+    }
+    
+    function backtoNormal(){
+        document.getElementById("subscribe_btn").style.background = "#e8491d";//sets background colour of the sunscribe button back to its original colour
+    }
+    
+    </script>
+  
+    
+</head>
+    
+   
+<body>
+
+ <!--Header-->   
+    
+<header>
+  <div class="container">
+    <div id="logo-brand">
+    <a id="logo-link" href="index.html"><img src="img/logo.png" alt="main company logo"></a>
+      </div>
+ <!--nav bar-->   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">Tech on the News</a></li>
+            <li><a href="deals.html">Top Deals</a></li>
+            <li><a href="expo.html">Expo</a></li>
+            <li><a href="contact-info.html">Contact Us</a></li>
+            <li><a href="report.html">Report</a></li>
+        </ul>
+    </nav>
+    
+ </div> 
+    
+</header>
+
+<section id="homepage-content">
+  <!--information about the website-->  
+    <div class="container">
+        <h1>Who We Are...</h1>
+        <p>We are a newly established online community for technology enthusiasts. Here you can find all things technology from information about the most latest's and bizarre pieces of gadgets on the news to some of the best deals for gadgets and other cool things that we feel are good value for money.  We feel that there just aren’t enough of these communities of this nature out there despite the craze for all things technology and so we decided to create this friendly site. We also have a yearly expo at the London excel centre in Greenwich which we tell you more about on our expo page and DON’T FORGET!!! Signup to our mailing list with your email address so we can keep you up to date with the latest news about the latest gadgets. After all you passion for technology is what drives us forward.
+        </p>
+    </div>
+        
+    
+</section>
+
+<section id="newsletter-form">
+  <!--newsletter subscription section-->  
+  <div class="container">
+      <h1>Subscribe To Our News Letter!</h1>    
+     <!--newsletter subscription form-->   
+      <form>
+      <input type="email" placeholder="Enter Email..." required="required" >
+      <button id="subscribe_btn" type="submit" class="form_btn" onmouseover="changeColor()" onmouseout="backtoNormal()">Submit</button>
+      </form>  
+         
+  </div>
+    
+    
+</section>
+
+    
+    
+<section id="sponsors">
+<div class="container">
+ <!--sponsor logo images-->       
+     <h1> OUR SPONSORS...</h1>
+     <div class="sponsor-images">
+     <img class="sponsor-img" src="img/toshiba-logo.png" alt="toshiba company logo">
+     
+     </div>        
+        
+     <div class="sponsor-images">
+     <img class="sponsor-img" src="img/siemens-logo.jpg" alt="siemens company logo">
+     
+     </div>   
+    
+     <div class="sponsor-images">
+     <img class="sponsor-img" src="img/excel-logo.jpg" alt="excel centre logo">
+    
+     </div>     
+        
+</div>
+    
+</section>
+    
+  <!--footer-->  
+ 
+    <footer>
+    
+        <p> Technology Haven Copyright &copy; 2019</p>
+    
+    </footer>
+
+</body>
+</html>
+
+
+
+ 
+
+
